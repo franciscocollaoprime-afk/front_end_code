@@ -1,0 +1,132 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #F4F1EA;
+    color: #333333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+nav {
+    background-color: #0d2952;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    padding: 0.8rem 0;
+}
+nav a {
+    color: #F4F1EA;
+    margin: 0 20px;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    transition: color 0.3s;
+}
+nav a:hover {
+    color: #BC6C25;
+    text-decoration: none;
+}
+header {
+    background-color: #2f6628;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 5%;
+}
+header h1{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-decoration: underline solid;
+}
+main {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 20px;
+}
+.animal-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 2rem;
+}
+.animal-card {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    text-align: center;
+}
+.animal-card:hover {
+    transform: translateY(-5px);
+}
+.animal-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+.animal-card span{
+    display: block;
+    padding: 10px;
+    font-weight: bold;
+    color: #1B365D; /* Color que ya usabas para links */
+    transition: color 0.3s ease;
+}
+.img-left {
+    float: left;
+    margin: 0 20px 10px 0;
+    width: 250px;
+    border-radius: 8px;
+    border: 3px solid #2D5A27;
+}
+.img-right {
+    float: right;
+    margin: 0 0 10px 20px;
+    width: 250px;
+    border-radius: 8px;
+    border: 3px solid #2D5A27;
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+a {
+    color: #1B365D;
+    text-decoration: none;
+    font-weight: bold;
+}
+.line-card{
+    margin: 0;
+    padding: 10px;
+}
+.btn-box{
+    text-align: center;
+}
+.btn-contacto {
+    display: inline-block;
+    background-color: #BC6C25;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 15px;
+    margin-top: 30px;
+    transition: background 0.2s;
+}
+.btn-contacto:hover {
+    background-color: #96561D;
+    text-decoration: none;
+    color: white;
+}
+footer {
+    background-color: #333;
+    color: #F4F1EA;
+    text-align: center;
+    padding: 1.5rem 1rem;
+    margin-top: 4rem;
+    border-top: 5px solid #2D5A27;
+}
+footer p {
+    font-family:sans-serif;
+    margin: 5px 0;
+    text-decoration: underline;
+}
